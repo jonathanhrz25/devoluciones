@@ -89,12 +89,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->Host = 'mail.smtp2go.com';
+            $mail->Host = '****';
             $mail->SMTPAuth = true;
-            $mail->Username = 'ticket@serva.com.mx';
-            $mail->Password = 'Serva123.*';
+            $mail->Username = '****';
+            $mail->Password = '****';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 2525;
+            $mail->Port = 0000;
             $mail->SMTPDebug = 0;
             $mail->Debugoutput = 'html';
             $mail->setFrom('ticket@serva.com.mx', 'Automotriz Serva');
@@ -163,4 +163,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 $conn = null;
+
 ?>
